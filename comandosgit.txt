@@ -1,0 +1,5 @@
+git commit -m "comentario" 
+git add nombrearchivo 
+git status = ver estados, cambios, etc. 
+git diff = cambios en el archivo antes de ser agregado
+git log = revisar el historial de nuestro repositorio, nombre, correo y un mensaje del commit.
