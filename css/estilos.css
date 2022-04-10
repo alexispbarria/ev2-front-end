@@ -1,4 +1,4 @@
-/* vinculado a GIT y GITHUB /*
+/* vinculado a GIT y GITHUB
 /* Quitandole el margen al body completo */
 body {
     margin: 0;
@@ -8,15 +8,13 @@ body {
 
 }
 
-
-
-/* con el #, se da conexión dentro del codigo html, en este caso en el nav id="menu", dicho contenedor almacena las tablas */
+/* con el #, se da conexión dentro del codigo html, en este caso en el nav id="menu", dicho contenedor almacena las listas */
 #menu a {
 
     /* Quitando las decoraciones del texto, en este caso, al ser hipervinculo <a>, les quita el subrayado */
     text-decoration: none;
 
-    /* separando en 50 pixeles los textos entre si, dentro de la tabla */
+    /* separando en 50 pixeles los textos entre si, dentro de la lista */
     padding:  50px; 
     
     /* aplicando la fuente Effra */
@@ -128,7 +126,7 @@ header {
 
 .slider {
     /* Ajustando ancho y alto  */
-    width: 1920px;
+    width: 1904px;
     height: 803.812px;
 
     /* Con esto, las imágenes comienzan en todo el box ocupado por el slider */
@@ -173,6 +171,7 @@ header {
     /*Con la opacidad en 0, hacemos que las imágenes aparezcan solo cuando nosotros demos click. */
     opacity: 0;
 
+    /* Aplicando efecto de transicion al cambiar de imágen manualmente. */
     transition: all 0.9s;
 }
 
@@ -223,3 +222,47 @@ header {
     background: black;
 }
 
+/* Configurando segundo bloque, bajo el slider denominado "tiendas"*/
+
+/* Configurando clase tiendas, que vendría siendo la totalidad del bloque */
+.tiendas {
+    
+    /*Dando el tamaño del box (bloque completo que abarcará */
+    width: 1904;
+    height: 390px;
+    padding: 20px;
+
+    /*Aplicando color de fondo al box o bloque */
+    background: #F5EDFF;
+
+    /* Margen superior, separación con el slider */
+    margin-top: 20px;
+}
+
+/* Configurando el título h1 "Tiendas" */
+.tiendas h1 {
+
+    /*Aplicando margen izquierdo */
+    margin-left: 30px;
+
+    /*Tipo de letra y tamaño de letra */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+/* Configurando las imágenes de las tablas */
+.tiendas table tr img {
+
+    /* altura y ancho de la imágen */
+    height: 280px;
+    width: 450.75px;
+
+    /* Margen entre cada imágen */
+    margin-right: 14px;
+}
+
+/* Configurando las separaciones de la tabla */
+.tiendas table {
+    margin-left: 0px;
+
+}
