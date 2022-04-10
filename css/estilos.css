@@ -1,0 +1,224 @@
+/* Quitandole el margen al body completo */
+body {
+    margin: 0;
+
+    /* Aplicando color de fondo de la página (no al encabezado) */
+    background-color: #F5EDFF;
+
+}
+
+
+
+/* con el #, se da conexión dentro del codigo html, en este caso en el nav id="menu", dicho contenedor almacena las tablas */
+#menu a {
+
+    /* Quitando las decoraciones del texto, en este caso, al ser hipervinculo <a>, les quita el subrayado */
+    text-decoration: none;
+
+    /* separando en 50 pixeles los textos entre si, dentro de la tabla */
+    padding:  50px; 
+    
+    /* aplicando la fuente Effra */
+    font-family: "Effra", sans-serif;
+
+    /* Tamaño de la fuente */
+    font-size: 20px;
+
+    /* Aplicando negrita a la fuente */
+    font-weight: 800;   
+
+    /* Color de texto negro */
+    color: black;    
+}
+
+
+
+/* Modificando el header del codigo html */
+header {   
+
+    /*  Ordenando todo horizontalmente, sin el display flex, el texto se encontraría abajo del logo */
+    display: flex;
+    
+    /* Aplicando una altura del header de 80 pixeles */
+    height: 80px;
+
+    /* Color de fondo del Header */
+    background: #FFFFFF;
+
+    /* Centrando los items del header */
+    align-items: center;
+
+}
+
+
+
+/* Modificando el logo de la página, en este caso comienza en . debido a que es class ="logo" */
+.logo img {
+    /* Aplicando un margen de 160 px en el lado izquierdo, para que la imagen se desplace a la derecha. */
+    margin-left: 160px;
+
+    margin-right: 400px;
+}
+
+
+
+/* Modificando las tablas desordenadas, en este caso es id="menu", debido a que comienza con un # */
+#menu ul {
+    /* Eliminando los puntos de la lista desordenada */
+    list-style: none;
+  
+}
+
+
+
+#menu ul li {
+    /* Ordenando la lista horizontalmente hacia la izquierda */
+    float: left;     
+}
+
+
+
+/* Al pasar el cursos encima de nuestro header, concretamente en tiendas, panoramas y ubicacion, este cambiara al color puesto abajo */
+#menu a:hover{
+    color: #948AC4;
+}
+
+
+
+/*Al pasar el cursor encima de nuestro header, concretamente en tiendas, panoramas y ubicacion, este hará un pequeño efecto zoom */
+#menu ul li:hover{
+
+    /*Aumentando el tamaño del zoom */
+    transform: scale(1.2);
+
+    /* Modificando el tiempo que demorará en hacer zoom completo */
+    transition: width 2s, height 2s, transform 1s;      
+}
+
+
+
+/* modificando el nav="menu" completo */
+#menu {
+    /* asignandole un ancho */
+    width: 1611.44px;
+
+    /* asignandole respectiva altura */
+    height: 50px;
+
+    /* color de fondo */
+    background-color: #FFFFFF;
+
+    color: black;
+}
+
+
+
+/* Modificando la imagen dentro de la lista, en este caso las imagenes a un lado de Tiendas, Panoramas y Ubicación */
+#menu ul li img{
+
+    /* Otorgando margen hacia la derecha*/
+    margin-right: 30px;
+
+    /* alineando el texto de la imagen en el centro.*/
+    vertical-align: middle;   
+}
+
+/* Configurando los sliders de la página */
+
+.slider {
+    /* Ajustando ancho y alto  */
+    width: 1920px;
+    height: 803.812px;
+
+    /* Con esto, las imágenes comienzan en todo el box ocupado por el slider */
+    position: relative;
+
+    /* con esto quitamos los puntos negros del estilo de la lista */
+    list-style: none;
+
+    /* ajustamos los clickeables para que se apeguen al margen del slider */
+    padding: 0;
+
+    /* poner los radio button en linea */
+    display: flex;
+
+    /*Justificar el radio button al centro */
+    justify-content: center;
+    /* Configurar el radio button en la parte de abajo. */
+    align-items: flex-end;
+
+    /* Apegando al header con el body slider. */
+    margin-top: 0;
+
+    /*Al momento de pasar el cursor por el slider, se convertirá en manito*/
+    cursor: pointer;
+}
+
+
+/* Configurando las imágenes del slider */
+.slider img {
+
+    /* Con esto, las imágenes se montan unas con otras */
+    position: absolute;
+
+    /* Con top 0 y left 0, se montan perfectamente unas con otras */
+    top: 0;
+    left: 0;
+
+    /* Con la altura y ancho al 100%, ocupa el total del espacio asignado al slider */
+    width: 100%;
+    height: 100%;
+
+    /*Con la opacidad en 0, hacemos que las imágenes aparezcan solo cuando nosotros demos click. */
+    opacity: 0;
+
+    transition: all 0.9s;
+}
+
+/* configurando los input del slider */
+.slider input[type="radio"] {
+
+    /* deshabilitamos visualmente los radio button para dar paso a los label button.*/
+    display: none;
+}
+
+/* Aquí comenzamos con la configuración del input, para que cuando presionemos alguno de los 3, se muestre la imagen solicitada. */
+/* El ~ significa que al tener un input activado, se utilizará la etiqueta img */
+.slider input[type="radio"]:checked ~ img{
+
+    /* al activar el input, la opacidad volverá a estar en 1, por lo que se procederá a mostrar la imagen */
+    opacity: 1;
+}
+
+/* Comenzamos a configurar los labels, para generar nuestros propios radio button. */
+.slider input[type="radio"] + label {
+
+    /* Al configurar la posicion en relative y el z-index en 50, permitimos que los label button se encuentren por encima de las imágenes, por lo que podemos seleccionarlos. */
+    position: relative;
+    z-index: 50;
+
+    /* Separacion entre los label button */
+    margin: 6px;
+
+    /*Esta es la configuración de los labels*/
+    display: block;
+
+    /* Ancho y alto del label*/
+    width: 6px;
+    height: 6px;
+
+    /*Color del label sin seleccionarlo*/
+    background: #ddd7e5;
+
+    /*poniendo el label en circulo */
+    border-radius: 50%;
+
+    /*Al momento de pasar el cursor por el slider, se convertirá en manito*/
+    cursor: pointer;
+}
+
+/*Una vez seleccionemos una imagen, el checked será de color negro*/
+.slider input[type="radio"]:checked + label {
+    background: black;
+}
+

@@ -1,0 +1,85 @@
+<html>
+    <!-- Encabezado de la página-->
+    <head>
+     
+    <!-- Configurando idioma de la página al español-->    
+	<meta charset="UTF-8">
+
+    <!-- Con esto, podemos trabajar el archivo css en un archivo aparte, fuera del documento html-->
+    <link rel="stylesheet" href="C:\xampp\htdocs\css\estilos.css"
+
+    <!-- Titulo de la página (se muestra en la pestaña) -->
+	<title> Viña Outlet Park</title>
+
+    <!-- Icono que va junto al titulo de la página-->
+    <link rel="icon" type="image/jpg" href="C:\xampp\htdocs\img\icon-title.png">
+
+
+    </head>
+    <body>
+        <!-- Elementos de navegación en la página introductorios-->
+        <header>
+
+            <!-- creando división, una sección exclusiva para el logo en el header-->
+            <div class="logo">
+
+                <!-- Importando el logo mediante img, el cual irá en el encabezado, con su alter que diga "elementos sitio_mesa de trabajo 1, tal cual la página indica."-->
+                <a href="https://www.outletpark.cl/" target="_blank"><img src="C:\xampp\htdocs\img\logo.outlet.png" alt="Elementos sitio_Mesa de trabajo 1"></a>
+            </div>
+
+            <!-- Nav proporciona enlaces de navegación, en este caso Tiendas, Panoramas y ubicación servirán para la navegación en el encabezado-->
+            <nav id="menu">
+
+                <!-- Comienzo de la lista desordenada (unorder list)-->
+                <ul>
+
+                    <!-- comiendo del li (item list), cada item contiene un link de redirección, esto va en el header-->
+                    <li><a href="" class="nav-link"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-tiendas.png" alt=""/>Tiendas</a></li>
+                    <li><a href="" class="nav-link"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-panoramas.png" alt=""/> Panoramas</a></li>
+                    <li><a href="" class="nav-link"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-ubicacion.png" alt=""/> Ubicación</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Aquí comienza el Slider de imágenes.-->
+
+        <!-- Se crea una lista desordenada con la clase llamada slider, para llamarlo más facil en el archivo css-->
+        <ul class="slider">
+            <li>
+                <!-- El input será del tipo radio, para generar el botón seleccionable dentro de la página, mientras que su id será para ser reconocido-->
+                <!-- le agregamos al primer slider el atributo checked, para que al cargar la página, sea la imagen que aparezca primero, gracias al radio y label.-->
+                <input type="radio" id="sliderboton1" name="boton" checked> 
+
+                <!-- El siguiente label, corresponde al id del input anterior-->
+                <label for ="sliderboton1"></label>
+
+                <!-- Imágenes del slider-->
+                <img src="C:\xampp\htdocs\img\slider1.png">
+            </li>
+            <li>
+                <!-- El input será del tipo radio, para generar el botón seleccionable dentro de la página, mientras que su id será para ser reconocido-->
+                <input type="radio" id="sliderboton2" name="boton"> 
+
+                <!-- El siguiente label, corresponde al id del input anterior-->
+                <label for ="sliderboton2"></label>
+
+                <!-- Imágenes del slider-->
+                <img src="C:\xampp\htdocs\img\slider2.png">
+            </li>
+            <li>
+                <!-- El input será del tipo radio, para generar el botón seleccionable dentro de la página, mientras que su id será para ser reconocido-->
+                <input type="radio" id="sliderboton3" name="boton"> 
+
+                <!-- El siguiente label, corresponde al id del input anterior-->
+                <label for ="sliderboton3"></label>
+
+                <!-- Imágenes del slider-->
+                <img src="C:\xampp\htdocs\img\slider3.png">
+            </li>
+            
+
+
+        </ul>
+
+    </body>
+</html>
