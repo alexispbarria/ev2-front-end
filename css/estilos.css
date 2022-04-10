@@ -237,6 +237,9 @@ header {
 
     /* Margen superior, separación con el slider */
     margin-top: 20px;
+
+
+
 }
 
 /* Configurando el título h1 "Tiendas" */
@@ -259,10 +262,29 @@ header {
 
     /* Margen entre cada imágen */
     margin-right: 14px;
+
+    /* Transicion para la imagen */
+    transition: 1s ease-in-out;
+    
+}
+
+/*Efecto de zoom y cambio de tamaño a las imágenes de la tabla */
+.tiendas img:hover{
+
+    /* Efecto de zoom para las imágenes, el scale es la cantidad de zoom */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+    /* Oscureciendo la imágen cuando el cursor esté encima */
+    filter: brightness(60%);
+         
+    /*Al momento de pasar el cursor por el slider, se convertirá en manito*/
+    cursor: pointer;
 }
 
 /* Configurando las separaciones de la tabla */
-.tiendas table {
-    margin-left: 0px;
-
+.tiendas table tr th {
+    
+    /* Ocultar que la imagen salga del box. */
+    overflow: hidden;
 }
