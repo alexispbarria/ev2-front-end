@@ -257,12 +257,16 @@ header {
     height: 280px;
     width: 450.75px;
 
-    /* Margen entre cada imágen */
-    margin-right: 14px;
+    
 
     /* Transicion para la imagen */
     transition: 1s ease-in-out;
     
+}
+
+/* Modificando el espacio entre las tablas */
+.tiendas table {
+    border-spacing: 14px;
 }
 
 /*Efecto de zoom y cambio de tamaño a las imágenes de la tabla */
@@ -292,8 +296,7 @@ header {
     /*Dando el tamaño del box (bloque completo que abarcará */
     width: 1903px;
     height: 670px;
-    padding: 20px 20px 20px 20px;
-    
+    padding: 20px 20px 20px 20px;   
 }
 
 /*Configurando el titulo "panoramas" */
@@ -309,15 +312,42 @@ header {
 }
 
 /* Configurando las imágenes de las tablas */
-.panoramas table img {
+.panoramas table  img {
 
     /* altura y ancho de la imágen */
     height: 280px;
     width: 460.75px;
 
-    /* Margen entre cada imágen */
-    margin-right: 5px;
+    /* Transicion para la imagen */
+    transition: 1s ease-in-out;
+}
 
-     
-     
-     
+.panoramas table img:hover {
+    /* Efecto de zoom para las imágenes, el scale es la cantidad de zoom */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+    /* Oscureciendo la imágen cuando el cursor esté encima */
+    filter: brightness(60%);
+         
+    /*Al momento de pasar el cursor por el slider, se convertirá en manito*/
+    cursor: pointer;
+}
+
+/* Modificando la primera fila de la tabla */
+.panoramas table tr th {
+    /* Prohibiendo que la imágen se expanda más que el tamaño del recuadro */
+    overflow: hidden;
+}
+
+/* Modificando la segunda fila de la tabla */
+.panoramas table tr td {
+
+    /* Prohibiendo que la imágen se expanda más que el tamaño del recuadro */
+    overflow: hidden;
+}
+
+/* Modificando el espacio entre las tablas */
+.panoramas table {
+    border-spacing: 5px;
+}
