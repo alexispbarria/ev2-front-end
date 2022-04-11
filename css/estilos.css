@@ -228,7 +228,7 @@ header {
 .tiendas {
     
     /*Dando el tamaño del box (bloque completo que abarcará */
-    width: 1904;
+    width: 1904px;
     height: 390px;
     padding: 20px;
 
@@ -237,9 +237,6 @@ header {
 
     /* Margen superior, separación con el slider */
     margin-top: 20px;
-
-
-
 }
 
 /* Configurando el título h1 "Tiendas" */
@@ -288,3 +285,39 @@ header {
     /* Ocultar que la imagen salga del box. */
     overflow: hidden;
 }
+
+/* Configurando clase panoramas, que vendría siendo la totalidad del bloque */
+.panoramas {
+
+    /*Dando el tamaño del box (bloque completo que abarcará */
+    width: 1903px;
+    height: 670px;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+/*Configurando el titulo "panoramas" */
+.panoramas h1 {
+
+    /*Aplicando margen izquierdo */
+    margin-left: 30px;
+    
+     /*Tipo de letra y tamaño de letra */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    
+}
+
+/* Configurando las imágenes de las tablas */
+.panoramas table img {
+
+    /* altura y ancho de la imágen */
+    height: 280px;
+    width: 460.75px;
+
+    /* Margen entre cada imágen */
+    margin-right: 5px;
+
+     
+     
+     
