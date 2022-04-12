@@ -5,6 +5,7 @@ body {
     
     /* Aplicando color de fondo de la página (no al encabezado) */
     background-color: #F5EDFF;
+
 }
 
 /* con el #, se da conexión dentro del codigo html, en este caso en el nav id="menu", dicho contenedor almacena las listas */
@@ -429,6 +430,12 @@ header {
     width: 455.75px;
 }
 
+/*Centrando las imágenes de locomoción*/
+.locomocionbox table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Ajustando el bloque de datos, donde incluye dirección, horario y contacto*/
 .datos {
    
@@ -640,3 +647,47 @@ header {
 .datos table tr #contacto h3 table {
     margin-left: 40px;
 }
+
+
+/*Configurando el footer de la página*/
+footer p {
+    /*Tipo de fuente*/
+    font-family: "Roboto", sans-serif;
+
+    /*Tamaño de fuente*/
+    font-size: 14px;
+
+    /*Aplicando negrita*/
+    font-weight: 700;
+
+    /*Alineando el texto al centro*/
+    text-align: center;
+
+    /*Color de texto*/
+    color: white;
+
+    /*Color de fondo del box*/
+    background-color: #3A328A;
+
+    /*Alto del footer*/
+    height: 55.1875px;
+
+    /*Ancho del footer*/
+    width: 1903px;
+
+    /*Ajustando el footer con el body*/
+    margin-top: auto;
+
+    /*Ajustando el footer para que no tenga margen hacia abajo*/
+    margin-bottom: 0;
+}
+
+
+footer a {
+    /*Quitando el efecto enlace a la palabra WORKLab en el footer*/
+    text-decoration: none;
+
+    /*Aplicando color blanco*/
+    color: white;
+}
+
