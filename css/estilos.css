@@ -2,10 +2,9 @@
 /* Quitandole el margen al body completo */
 body {
     margin: 0;
-
+    
     /* Aplicando color de fondo de la página (no al encabezado) */
     background-color: #F5EDFF;
-
 }
 
 /* con el #, se da conexión dentro del codigo html, en este caso en el nav id="menu", dicho contenedor almacena las listas */
@@ -46,6 +45,16 @@ header {
 
     /* Centrando los items del header */
     align-items: center;
+    
+    /*Ajustando la anchura al 100% de la pantalla*/
+    width: 100%;
+
+    /* posicionando fijamente la cabecera de la página*/
+    position: fixed;
+
+    /*Con esto, la barra se muestra por encima de todas las imágenes de la página.*/
+    z-index: 100;
+    
 
 }
 
@@ -349,5 +358,285 @@ header {
 
 /* Modificando el espacio entre las tablas */
 .panoramas table {
-    border-spacing: 5px;
+    border-spacing: 8px;
+}
+
+/* Configurando clase ubicacion, que vendría siendo la totalidad del bloque */
+.ubicacion {
+
+    /*Dando el tamaño del box (bloque completo que abarcará */
+    height: 978.562px;
+    width: 1903px;
+    padding: 20px 20px 20px 20px;
+}
+
+/*Configurando el titulo "ubicación de las tiendas" */
+.ubicacion h1 {
+
+    /*Aplicando margen izquierdo */
+    margin-left: 30px;
+    
+     /*Tipo de letra y tamaño de letra */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+/*Configurando el titulo "locomoción"*/
+.locomocion {
+
+    /*Dando el tamaño del box (bloque completo que abarcará */
+    height: 65px;
+    width: 1903px;
+
+
+   /*Color de fondo del box*/ 
+    background-color: #3A328A;
+    
+    /*ajustado el texto de locomoción en el pie del box*/
+    vertical-align: bottom;
+
+    /*mostrando el texto tipo celda de una tabla*/
+    display: table-cell;
+}
+
+/*Configurando el titulo "locomoción"*/
+.locomocion h1 {
+    /*Color de texto*/
+    color: white;
+
+    /*Tipo de letra y tamaño de letra */
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+
+    /*alineando el texto hacia el centro */
+    text-align: center;  
+}
+
+/* Ajustando el bloque de locomoción, donde se encontrarán las imágenes con la información de las locomociones*/
+.locomocionbox {
+    /*Dando el tamaño del box (bloque completo que abarcará */
+    height: 172.156px;
+    width: 1903px;
+    padding: 0 0 20px 0;
+
+    /*Color de fondo del box*/ 
+    background-color: #3A328A;
+}
+
+/* Ajustando la altura y anchura de las imágenes de locomoción*/
+.locomocionbox table tr th img {
+    height: 118.484px;
+    width: 455.75px;
+}
+
+/* Ajustando el bloque de datos, donde incluye dirección, horario y contacto*/
+.datos {
+   
+    /*Ajustando el color de fondo del box*/
+    background-color: #3A328A;
+
+    /* Medidas del bloque (altura y anchura) */
+    height: 270.625px;
+    width: 1903px;
+}
+
+.datos table  {
+
+    /*Centrando la tabla de contenido datos.*/
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*Ajustando el box de la fila "direccion"*/
+.datos table tr #direccion {
+
+    /*Ajustando medidas*/
+    height: 250.625px;
+    width: 550.891px;
+  
+}
+
+/*Configurando subtitulo dirección h2*/
+.datos table tr #direccion h2 {
+    
+    /*Ajustando la fuente del texto*/
+    font-family: "Effra", sans-serif;
+
+    /*Ajustando y alineando el tamaño y lugar del texto*/
+    font-size: 20px;
+    text-align: center;
+
+    /*Ajustando texto del subtitulo dirección*/
+    color: white;
+}
+
+/*Configurando subtitulo dirección h3*/
+.datos table tr #direccion h3 {
+
+    /*Asignandole tipo de fuente*/
+    font-family: "Roboto", sans-serif;
+
+    /*Asignando tamaño de fuente*/
+    font-size: 14px;
+
+    /*Asignando el texto hacia el lado izquierdo del box*/
+    text-align: left;
+    
+    /* Cursor de manito*/
+    cursor: pointer;
+}
+
+/*Modificando el enlace <a> que se encuentra dentro del subtitulo h3*/
+.datos table tr #direccion h3 a {
+
+    /*Quitando el formato de enlace*/
+    text-decoration: none;
+
+    /*Otorgandole color blanco*/
+    color: white;
+
+    /*Quitandole la negrita al texto*/
+    font-weight: lighter;
+}
+
+/*Ajustando la imágen (icono) del apartado dirección*/
+.datos table tr #direccion h3 a img {
+
+    /*Alineandolo verticalmente para que se complemente con el texto "Camino internacional ..."*/
+    vertical-align: middle;
+}
+
+/*Configurando el mapa de google*/
+.datos table tr #direccion iframe {
+
+    /*Ajustando tamaño del mapa de google*/
+    height: 90px;
+    width: 550.891px;
+    max-width: 100%;
+}
+
+/* Ajustando las medidas del box de horarios*/
+.datos table tr #horario {
+
+     /*Ajustando medidas*/
+     height: 250.625px;
+     width: 550.891px;
+}
+
+/* Ajustando el titulo h2 "HORARIO"*/
+.datos table tr #horario h2 {
+
+    /*Ajustando la fuente del texto*/
+    font-family: "Effra", sans-serif;
+
+    /*Ajustando y alineando el tamaño y lugar del texto*/
+    font-size: 20px;
+    text-align: center;
+
+    /*Ajustando texto del subtitulo dirección*/
+    color: white;
+}
+
+/*Configurando las listas desordenadas*/
+.datos table tr #horario h3 {
+
+    /*Ajustando el color del texto*/
+    color: white;
+
+    /*Alineando el texto hacia la izquierda*/ 
+    text-align: left;
+
+    /*Ajustando la fuente y tamaño del texto*/
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+
+    margin-left: 90px;
+}
+
+/*Quitando la letra negrita de las ids ul1 y sin-punto1, a aquellas les asigne esas ids para modificarlas todas de una, además de quitarle los puntos de la unorder list.*/
+.datos table tr #horario h3 #ul1 #sin-punto1 {
+
+    /*Quitandole la negrita al texto*/
+    font-weight: lighter;
+    list-style: none;
+}
+
+/*Ajustando el interlineado de los textos de las tablas*/ 
+.datos table tr #horario h3 #ul1 {
+
+    line-height: 25px;
+}
+
+/*Ajustando las medidas del box contacto*/
+.datos table tr #contacto {
+    
+    /*Ajustando medidas*/
+    height: 250.625px;
+    width: 550.891px;
+}
+
+/* Ajustando el titulo h2 "contacto"*/
+.datos table tr #contacto h2 {
+
+    /*Ajustando la fuente del texto*/
+    font-family: "Effra", sans-serif;
+
+    /*Ajustando y alineando el tamaño y lugar del texto*/
+    font-size: 20px;
+    text-align: center;
+
+    /*Ajustando texto del subtitulo dirección*/
+    color: white;
+}
+
+/*Configurando las listas desordenadas*/
+.datos table tr #contacto h3 {
+
+    /*Ajustando el color del texto*/
+    color: white;
+
+    /*Alineando el texto hacia la izquierda*/ 
+    text-align: left;
+
+    /*Ajustando la fuente y tamaño del texto*/
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+
+    margin-left: 90px;
+}
+
+/*Modificando el enlace <a> que se encuentra dentro del subtitulo h3*/
+.datos table tr #contacto h3 ul li a {
+
+    /*Quitando el formato de enlace*/
+    text-decoration: none;
+
+    /*Otorgandole color blanco*/
+    color: white;
+
+    /*Quitandole la negrita al texto*/
+    font-weight: lighter;
+}
+
+/*Ajustando la imágen (icono) del apartado contacto*/
+.datos table tr #contacto h3 ul li a img {
+
+    /*Ajustando imágenes dentro del enlace <a> al centro, para que se acomode junto a los textos*/
+    vertical-align: middle;
+}
+
+/*Ajustando interlineado de la lista*/
+.datos table tr #contacto h3 ul {
+    line-height: 25px;
+}
+
+/*Eliminando los puntos de las listas desordenadas (ul)*/
+.datos table tr #contacto h3 ul li {
+
+    list-style: none;
+}
+
+/*Ajustando iconos RRSS para que queden a la par del texto superior*/
+.datos table tr #contacto h3 table {
+    margin-left: 40px;
 }

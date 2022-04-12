@@ -131,5 +131,118 @@
             </table>
         </div>
 
+        <!--Comenzando el cuarto bloque, donde habrá una imágen con la ubicación de las tiendas.-->
+        <div class="ubicacion">
+
+            <!-- Titulo del bloque-->
+            <h1>UBICACIÓN DE LAS TIENDAS</h1>
+            <img src="C:\xampp\htdocs\img\ubicacion.mapa.png"/>
+        </div>
+
+        <!-- Titulo de locomoción-->
+        <div class="locomocion">
+            <h1>LOCOMOCIÓN</h1>
+        </div>
+
+        <!--Configurando imágenes y titulos que aparecen en el apartado locomoción-->
+        <div class="locomocionbox">
+            <table>
+                <tr>
+                    <th><img src="C:\xampp\htdocs\img\locomocion1.png"/></th>
+                    <th><img src="C:\xampp\htdocs\img\locomocion2.png"/></th>
+                    <th><img src="C:\xampp\htdocs\img\locomocion3.png"/></th>
+                    <th><img src="C:\xampp\htdocs\img\locomocion4.png"/></th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Creando el último bloque de datos, antes del footer.-->
+        <div class="datos">
+            <!--Comienzo de la tabla con 3 filas-->
+            <!--Estas filas contiene cada uno un bloque, uno para direccion, otro para horario y el ultimo para contacto.-->
+            <table>
+                <tr>
+
+                    <!-- Primera fila incluye dirección, logo, dirección escriba y mapa de google a través de IFRAME-->
+                    <th id="direccion">
+                        <!-- subtitulo-->
+                        <h2>DIRECCIÓN</h2>
+
+                        <!-- subtitulo, más pequeño que h2-->
+                        <h3>
+                            <!-- Este <a> incluye un link de referencia que se abre en una nueva pestaña a través del _blank, además trae el icono en <img> y la dirección escrita.-->
+                            <a href="https://www.google.com/maps?ll=-32.985451,-71.499133&z=15&t=m&hl=es-419&gl=US&mapclient=embed&q=Cam.+Internacional+2440+Vi%C3%B1a+del+Mar+Valpara%C3%ADso" target="_blank"><img src="C:\xampp\htdocs\img\icono-mapa.png"/>Camino Internacional 2440, Reñaca Alto, Viña del Mar</a>
+                        </h3>
+                        <iframe src="https://maps.google.com/maps?q=Camino%20Internacional%202440%2C%20Vi%C3%B1a%20del%20mar&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </th>
+
+                    <!-- Incluye los datos de horario -->
+                    <th id="horario">
+
+                        <!--subtitulo-->
+                        <h2>HORARIO</h2>
+
+                        <!--subtitulo más pequeño que h2-->
+                        <h3>
+
+                            <!-- Lista ordenada, en el segundo punto se le incluyó una ID para poder quitar los puntos en css-->
+                            <ul id="ul1">
+                                <li>LUNES A DOMINGO</li>
+                                <li id="sin-punto1">de 10:00 a 20:00 hrs.</li>
+                            </ul>
+
+                            <!-- segunda lista ordenada, en el segundo, tercer y cuarto punto se le incluyó una ID para poder quitar los puntos en css, además, el <u> subraya el texto.-->
+                            <ul id="ul1">
+                                <li>Estacionamiento</li>
+                                <li id="sin-punto1"><u>GRATIS</u> los primeros 30 minutos</li>
+                                <li id="sin-punto1">Cada ½ hora = $500 pesos</li>
+                                <li id="sin-punto1">Tarifa máxima = $3.500 pesos</li>
+                            </ul>
+                        </h3>
+                    </th>
+
+                    <!-- configurando el tercer bloque de datos, que incluye los datos de contacto-->
+                    <th id="contacto">
+
+                        <!-- subtitulo-->
+                        <h2>CONTACTO</h2>
+
+                        <h3>
+                            <ul>
+                                <!-- Fila de la lista que contiene el correo, junto a una redirección a este mismo, más su icono-->
+                                <li>
+                                    <a href="mailto:novedades@outletpark.cl" target="_blank"><img src="C:\xampp\htdocs\img\icono-mail.png"/> novedades@outletpark.cl</a>
+                                </li>
+
+                                <!--Fila de la lista que contiene el teléfono, junto a una redirección a este, más su icono-->
+                                <li>
+                                    <a href="tel:322514100"><img src="C:\xampp\htdocs\img\icono-fono.png"/>32 251 4100</a>
+                                </li>
+
+                                <!-- Fila de la lista que contiene la página de contacto, junto a una redirección más su icono.-->
+                                <li>
+                                    <a href="https://outletpark.cl/contacto" target="_blank"><img src="C:\xampp\htdocs\img\icono-mensaje.png"/>Enviar mensaje</a>
+                                </li>
+                            </ul>
+
+                            <!-- Creando pequeña tabla para los logos de rrss-->
+                            <table>
+                                <tr>
+                                    <!-- logo fb-->
+                                    <th>
+                                        <a href="https://www.facebook.com/outletparkvina" target="_blank"><img src="C:\xampp\htdocs\img\icono-fb.png"/></a>
+                                    </th>
+                                    <th>
+                                        <a href="https://www.instagram.com/outlet_park/" target="_blank"><img src="C:\xampp\htdocs\img\icono-insta.png"/></a>
+                                    </th>
+                                </tr>
+                            </table>
+                        </h3>
+
+                    </th>
+                </tr>
+            </table>
+        </div>
+
     </body>
 </html>
