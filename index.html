@@ -33,11 +33,15 @@
 
                 <!-- Comienzo de la lista desordenada (unorder list)-->
                 <ul>
-
-                    <!-- comiendo del li (item list), cada item contiene un link de redirección, esto va en el header-->
-                    <li><a href="" class="nav-link"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-tiendas.png" alt=""/>Tiendas</a></li>
-                    <li><a href="" class="nav-link"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-panoramas.png" alt=""/> Panoramas</a></li>
-                    <li><a href="" class="nav-link"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-ubicacion.png" alt=""/> Ubicación</a></li>
+                    <!--Creando botones para redireccionar dentro de la pantalla-->
+                    <div class="buttons">
+                        
+                        <!--Cada li, contendrá un href directo hacia la sección que pulsemos, debido a su class button-->
+                        <!-- comiendo del li (item list), cada item contiene un link de redirección, esto va en el header-->
+                        <li><a href="#secciontiendas" class="button"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-tiendas.png" alt=""/>Tiendas</a></li>
+                        <li><a href="#seccionpanoramas" class="button"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-panoramas.png" alt=""/> Panoramas</a></li>
+                        <li><a href="#seccionubicacion" class="button"><img width="24" height="24" src="C:\xampp\htdocs\img\icono-ubicacion.png" alt=""/> Ubicación</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -80,7 +84,7 @@
         </ul>
 
         <!-- Comenzando el segundo bloque, donde habrán 4 imágenes-->
-        <div class="tiendas">
+        <div id="secciontiendas" class="tiendas">
             
             <!-- Insertando título-->
             <h1>TIENDAS</h1>
@@ -102,7 +106,7 @@
         </div>
 
         <!-- Comenzando el tercer bloque, donde habrán 4 imágenes en la primera fila y 3 en la segunda-->
-        <div class="panoramas">
+        <div id="seccionpanoramas" class="panoramas">
 
             <!-- Insertando título-->
             <h1>PANORAMAS</h1>
@@ -132,7 +136,7 @@
         </div>
 
         <!--Comenzando el cuarto bloque, donde habrá una imágen con la ubicación de las tiendas.-->
-        <div class="ubicacion">
+        <div id="seccionubicacion" class="ubicacion">
 
             <!-- Titulo del bloque-->
             <h1>UBICACIÓN DE LAS TIENDAS</h1>

@@ -5,7 +5,12 @@ body {
     
     /* Aplicando color de fondo de la página (no al encabezado) */
     background-color: #F5EDFF;
+}
 
+/*Configurando etiqueta html*/
+html {
+    /*Configurando el tipo de scroll, con esto tendrá una animación no rígida.*/
+    scroll-behavior: smooth;
 }
 
 /* con el #, se da conexión dentro del codigo html, en este caso en el nav id="menu", dicho contenedor almacena las listas */
@@ -53,8 +58,12 @@ header {
     /* posicionando fijamente la cabecera de la página*/
     position: fixed;
 
+    /*Con esto el header quedará situado sin margen superior*/
+    top: 0;
+
     /*Con esto, la barra se muestra por encima de todas las imágenes de la página.*/
-    z-index: 100;
+    z-index: 1;
+    
     
 
 }
@@ -147,6 +156,7 @@ header {
 
     /* ajustamos los clickeables para que se apeguen al margen del slider */
     padding: 0;
+    
 
     /* poner los radio button en linea */
     display: flex;
@@ -161,6 +171,9 @@ header {
 
     /*Al momento de pasar el cursor por el slider, se convertirá en manito*/
     cursor: pointer;
+
+    margin: 80px auto 0px;
+
 }
 
 
@@ -183,7 +196,9 @@ header {
 
     /* Aplicando efecto de transicion al cambiar de imágen manualmente. */
     transition: all 0.9s;
+
 }
+
 
 /* configurando los input del slider */
 .slider input[type="radio"] {
