@@ -1,17 +1,13 @@
-/* vinculado a GIT y GITHUB
 /* Quitandole el margen al body completo */
 body {
     margin: 0;
-    
+
     /* Aplicando color de fondo de la página (no al encabezado) */
     background-color: #F5EDFF;
+
 }
 
-/*Configurando etiqueta html*/
-html {
-    /*Configurando el tipo de scroll, con esto tendrá una animación no rígida.*/
-    scroll-behavior: smooth;
-}
+
 
 /* con el #, se da conexión dentro del codigo html, en este caso en el nav id="menu", dicho contenedor almacena las listas */
 #menu a {
@@ -141,11 +137,9 @@ header {
     vertical-align: middle;   
 }
 
-/* Configurando los sliders de la página */
-
 .slider {
     /* Ajustando ancho y alto  */
-    width: 1904px;
+    width: 1903px;
     height: 803.812px;
 
     /* Con esto, las imágenes comienzan en todo el box ocupado por el slider */
@@ -172,7 +166,9 @@ header {
     /*Al momento de pasar el cursor por el slider, se convertirá en manito*/
     cursor: pointer;
 
+    /* Dando margen para que el header quede bien acomodado con la imagen slider, de esta forma no tapará parte de ésta. */
     margin: 80px auto 0px;
+
 
 }
 
@@ -247,13 +243,11 @@ header {
     background: black;
 }
 
-/* Configurando segundo bloque, bajo el slider denominado "tiendas"*/
-
 /* Configurando clase tiendas, que vendría siendo la totalidad del bloque */
 .tiendas {
     
     /*Dando el tamaño del box (bloque completo que abarcará */
-    width: 1904px;
+    
     height: 390px;
     padding: 20px;
 
@@ -321,7 +315,7 @@ header {
     /*Dando el tamaño del box (bloque completo que abarcará */
     width: 1903px;
     height: 670px;
-    padding: 20px 20px 20px 20px;   
+    
 }
 
 /*Configurando el titulo "panoramas" */
@@ -383,7 +377,7 @@ header {
     /*Dando el tamaño del box (bloque completo que abarcará */
     height: 978.562px;
     width: 1903px;
-    padding: 20px 20px 20px 20px;
+
 }
 
 /*Configurando el titulo "ubicación de las tiendas" */
@@ -706,3 +700,8 @@ footer a {
     color: white;
 }
 
+/*Configurando etiqueta html*/
+html {
+    /*Configurando el tipo de scroll, con esto tendrá una animación no rígida.*/
+    scroll-behavior: smooth;
+}
